@@ -1,0 +1,113 @@
+   
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 350px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3, h4 {
+            margin-top: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .balance-section {
+            text-align: center;
+        }
+
+        .summary-section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #eee;
+        }
+
+        .summary-section > div {
+            text-align: center;
+        }
+
+        .money.plus {
+            color: #2ecc71; /* Green for income */
+        }
+
+        .money.minus {
+            color: #c0392b; /* Red for expense */
+        }
+        
+        .transaction-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .transaction-list li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .transaction-list li.plus {
+            border-left: 5px solid #2ecc71;
+        }
+        
+        .transaction-list li.minus {
+            border-left: 5px solid #e25a4b;
+        }
+        
+        .delete-btn {
+            cursor: pointer;
+            background-color: #5e3f3c;
+            color: white;
+            border: 0;
+            font-size: 20px;
+            padding: 2px 8px;
+            position: absolute;
+            left: -25px; /* Position it just outside the box */
+            top: 5px;
+            opacity: 0; /* Hide it by default */
+        }
+        
+        .transaction-list li:hover .delete-btn {
+            opacity: 1; /* Show button on hover */
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type='text'], input[type='number'] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; /* Important for padding */
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+  

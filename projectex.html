@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Expense Tracker</title>
+    <link rel="stylesheet" href="projectex.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Expense Tracker</h2>
+
+        <!-- Section to display the current balance -->
+        <div class="balance-section">
+            <h4>Your Balance</h4>
+            <h1 id="balance">$0.00</h1>
+        </div>
+
+        <!-- Section for income and expense summary -->
+        <div class="summary-section">
+            <div>
+                <h4>INCOME</h4>
+                <p id="money-plus" class="money plus">+$0.00</p>
+            </div>
+            <div>
+                <h4>EXPENSE</h4>
+                <p id="money-minus" class="money minus">-$0.00</p>
+            </div>
+        </div>
+        
+        <!-- Section to show the history of transactions -->
+        <h3>History</h3>
+        <ul id="transaction-list" class="transaction-list">
+            <!-- Transactions will be added here! -->
+        </ul>
+
+        <!-- Form to add a new transaction -->
+        <h3>Add new transaction</h3>
+        <form id="form">
+            <div>
+                <label for="text">Description</label>
+                <input type="text" id="description" placeholder="Enter description..." />
+            </div>
+            <div>
+                <label for="amount">Amount (negative for expense, positive for income)</label>
+                <input type="number" id="amount" placeholder="Enter amount..." />
+            </div>
+            <button class="btn">Add transaction</button>
+        </form>
+    </div>
+<script src="projec1ex.js"></script>
+</body>
+</html>
